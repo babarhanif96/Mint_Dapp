@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glamour Queen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <section class="loading"></section>
+    <section class="hero">
+        <div class="logo">Glamour Queen</div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="https://picnicfonic-2000.gitbook.io/glamourqueen-whitepaper/abstract/virtual-beings" target="_blank">
+                        Whitepaper
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li>
+                    <a href="http://discord.gg/glamourqueen" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/glamourqueennft" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <a style="margin-right: 2rem; margin-left: 2rem;" href="#">
+                    <button onclick="connect()"  id="btnn" style="margin-right: 10%;" class="btnn"> Connect </button>
+                </a>
+            </ul>
+        </div>
+        <div class="heroG">
+            <div>
+                <h1>Welcome on <span class="red">Glamour Queen</span></h1>
+                <p>A community celebrating representation, inclusivity, and equal opportunities for outstanding women leaders.</p>
+                <a href="#">
+                    <button class="btn">See on OpenSea</button>
+                </a>
+                <a style="margin-left: 2%;" href="#">
+                    <button onclick="Mint()" class="btn">Mint </button>
+                </a>
+            </div>
+        </div>
+        <div class="heroD">
+
+        </div>
+    </section>
+    <section class="discord">
+        <div class="container">
+            <h2 data-aos="zoom-in">Join <span class="red">our Discord</span></h2>
+            <a href="http://discord.gg/glamourqueen" data-aos="zoom-in-up"><button class="btn">Go !</button></a>
+        </div>
+    </section>
+    <div class="roadmap">
+        <div class="container">
+            <h2 data-aos="zoom-in">The <span class="red">Roadmap</span></h2>
+            <div class="line"></div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number">1</div>
+                <h4>Launch Roadmap</h4>
+                <p>We will finish the Genesis v1.0 sales, in August.</p>
+            </div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number off">2</div>
+                <h4>Launch Presale</h4>
+                <p>The pre-sale is limited to 188 nft, and each whitelist can buy 2 nft.</p>
+            </div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number off">3</div>
+                <h4>Mint the remaining NFTs on OpenSea</h4>
+                <p>Can be traded on opensea.</p>
+            </div>
+            <div class="bloc" data-aos="zoom-in">
+                <div class="number off">4</div>
+                <h4>Mint the remaining NFTs on OpenSea</h4>
+                <p>We will create a Superdream Labs in Paris, recruit queen hosts, combine it with our digital avatar solution and put it on social media platforms like youtube, tiktok, Instagram.
+                    At the same time, preparing our king nft and cloud nft (project landing in a Carrefour commercial center)</p>
+            </div>
+        </div>
+    </div>
+    <div class="team">
+        <div class="container">
+            <h2 data-aos="zoom-in">The <span class="red">Team</span></h2>
+            <div class="team__flex">
+                <div class="member" data-aos="zoom-in">
+                    <h4>Ben / <span class="job">Blockchain Developper</span></h4>
+                    <img src="img/mekas/team1.png" alt="Ben" />
+                </div>
+                <div class="member" data-aos="zoom-in">
+                    <h4>Anah / <span class="job">Designer</span></h4>
+                    <img src="img/mekas/team2.png" alt="Marc" />
+                </div>
+                <div class="member" data-aos="zoom-in">
+                    <h4>Chaudhary / <span class="job">Marketer</span></h4>
+                    <img src="img/mekas/team3.png" alt="Matt" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer__flex">
+                <div class="footerG">
+                    Glamour Queen
+                </div>
+                <div class="footerD">
+                    <ul>
+                        <li><a href="#"></a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <script>
+        window.addEventListener('load', async () => {
+    // Modern dapp browsers...
+    if (window.ethereum) {
+        window.web3 = new Web3(ethereum);
+        try {
+            // Request account access if needed
+            await ethereum.enable();
+            // Acccounts now exposed
+            // web3.eth.sendTransaction({/* ... */});
+          
+     accounts = await window.web3.eth.getAccounts();
+     document.getElementById("btnn").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+    // this.setState({ account: accounts[0] });
+    console.log("Sender :  " + accounts[0]);
+            console.log('1111');
+            //call function to connect contract
+             ConnectToContract();
+
+        } catch (error) {
+            // User denied account access...
+        }
+    }
+    // Legacy dapp browsers...
+    else if (window.web3) {
+        window.web3 = new Web3(web3.currentProvider);
+        // Acccounts always exposed
+        // web3.eth.sendTransaction({/* ... */});
+    }
+    // Non-dapp browsers...
+    else {
+      alert("please install metamask")
+        console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+    }
+})
+    </script>
+</body>
+</html>
